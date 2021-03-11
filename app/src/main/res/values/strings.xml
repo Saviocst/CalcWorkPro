@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calc Work Pro</string>
+    <string name="calcular">Calcular</string>
+    <string name="simular">Simular</string>
+    <string name="logouth">Sair</string>
+    <string name="welcome">Bem Vindo ao Mundo Do Aprendizado</string>
+    <string name="btn_calc">Calcular</string>
+    <string name="additional_hours">Horas Adicionais</string>
+    <string name="saturday">Sábado</string>
+    <string name="friday">Sexta-Feira</string>
+    <string name="thursday">Quinta-Feira</string>
+    <string name="wednesday">Quarta-Feira</string>
+    <string name="tuesday">Terça-Feira</string>
+    <string name="monday">Segunda-Feira</string>
+    <string name="sunday">Domingo</string>
+    <string name="info_timer">Horas Trabalhadas Por semana</string>
+    <string name="salary">Salario/R$</string>
+    <string name="info_salary">Sálario/Mês</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="info_confirm">Hora Aula Calculada</string>
+    <string name="error_message">Preencha o campo vazio</string>
+    <string name="succesful">Boa Mano mais uma Conquista!!</string>
+
+
+</resources>

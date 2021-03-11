@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_custom_sv"
+    tools:context=".WorkProActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".ActivityWork">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="@string/calcular"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/info_salary"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+
+        <EditText
+            android:id="@+id/edit_salary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/salary_custom_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/salary"
+            android:textColorHint="@color/black"
+            android:inputType="number"
+            android:maxLength="7"
+            app:layout_constraintTop_toBottomOf="@id/text_salary"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/info_timer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/info_timer"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_salary" />
+
+        <TextView
+            android:id="@+id/domingo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/sunday"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/info_timer" />
+
+        <SeekBar
+            android:id="@+id/day_sunday"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/domingo"
+            app:layout_constraintTop_toBottomOf="@id/domingo" />
+
+        <TextView
+            android:id="@+id/txt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@id/day_sunday"
+            app:layout_constraintTop_toBottomOf="@id/domingo" />
+
+        <TextView
+            android:id="@+id/segunda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/monday"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/domingo"
+            app:layout_constraintTop_toBottomOf="@id/day_sunday" />
+
+        <SeekBar
+            android:id="@+id/day_monday"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/segunda"
+            app:layout_constraintTop_toBottomOf="@id/segunda" />
+
+        <TextView
+            android:id="@+id/txt_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/day_monday"
+            app:layout_constraintTop_toBottomOf="@id/segunda" />
+
+        <TextView
+            android:id="@+id/terca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tuesday"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/segunda"
+            app:layout_constraintTop_toBottomOf="@id/day_monday" />
+
+        <SeekBar
+            android:id="@+id/day_tuesday"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/terca"
+            app:layout_constraintTop_toBottomOf="@id/terca" />
+
+        <TextView
+            android:id="@+id/txt_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/day_tuesday"
+            app:layout_constraintTop_toBottomOf="@id/terca" />
+
+        <TextView
+            android:id="@+id/quarta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/wednesday"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/terca"
+            app:layout_constraintTop_toBottomOf="@id/day_tuesday" />
+
+        <SeekBar
+            android:id="@+id/day_wednesday"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/quarta"
+            app:layout_constraintTop_toBottomOf="@id/quarta" />
+
+        <TextView
+            android:id="@+id/txt_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/day_wednesday"
+            app:layout_constraintTop_toBottomOf="@id/quarta" />
+
+        <TextView
+            android:id="@+id/quinta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/thursday"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/quarta"
+            app:layout_constraintTop_toBottomOf="@id/day_wednesday" />
+
+        <SeekBar
+            android:id="@+id/day_thursday"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/quinta"
+            app:layout_constraintTop_toBottomOf="@id/quinta" />
+
+        <TextView
+            android:id="@+id/txt_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/day_thursday"
+            app:layout_constraintTop_toBottomOf="@id/quinta" />
+
+        <TextView
+            android:id="@+id/sexta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/friday"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/quinta"
+            app:layout_constraintTop_toBottomOf="@id/day_thursday" />
+
+        <SeekBar
+            android:id="@+id/day_friday"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/sexta"
+            app:layout_constraintTop_toBottomOf="@id/sexta" />
+
+        <TextView
+            android:id="@+id/txt_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/day_friday"
+            app:layout_constraintTop_toBottomOf="@id/sexta" />
+
+        <TextView
+            android:id="@+id/sabado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/saturday"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/sexta"
+            app:layout_constraintTop_toBottomOf="@id/day_friday" />
+
+        <SeekBar
+            android:id="@+id/day_saturday"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/sabado"
+            app:layout_constraintTop_toBottomOf="@id/sabado" />
+
+        <TextView
+            android:id="@+id/txt_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/day_saturday"
+            app:layout_constraintTop_toBottomOf="@id/sabado" />
+
+        <TextView
+            android:id="@+id/extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/additional_hours"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/sabado"
+            app:layout_constraintTop_toBottomOf="@id/day_saturday" />
+
+        <SeekBar
+            android:id="@+id/day_others"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:max="8"
+            app:layout_constraintLeft_toLeftOf="@id/extra"
+            app:layout_constraintTop_toBottomOf="@id/extra" />
+
+        <TextView
+            android:id="@+id/txt_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/day_others"
+            app:layout_constraintTop_toBottomOf="@id/extra" />
+
+        <Button
+            android:id="@+id/btn_calc_worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_calc"
+            android:background="@drawable/salary_custom_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/day_others" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
